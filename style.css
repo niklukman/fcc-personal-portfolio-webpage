@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-1: #444649;
+  --color-2: #fff;
+  --color-3: #e31b6d;
+  --color-4: #009ada;
+  --color-5: #1b242f;
+  font-family: 'Raleway';
+  font-size: 16px;
+  color: var(--color-1);
+}
