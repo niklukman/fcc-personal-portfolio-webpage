@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style2.css" />
     <title>FCC: Nik Lukman - Personal Portfolio Webpage</title>
   </head>
   <body>
     <main>
       <header>
         <nav>
-          <ul id="navbar">
-            <li><a href="#welcome-section">Home</a></li>
+          <ul id="navbar" class="navbar">
+            <li><a href="#welcome-section" class="welcome">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#stacks">Stacks</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -21,130 +21,279 @@
         </nav>
       </header>
       <div class="return">
-        <a href="#navbar"><i class="fas fa-angle-double-up"></i></a>
         <p class="return-text">Return to the top</p>
+        <a href="#welcome-section"><i class="fas fa-angle-double-up"></i></a>
       </div>
-      <section id="welcome-section">
-        <h1>Hello, I'm Nik Lukman</h1>
-        <p>I'm an aspiring full-stack web developer</p>
-        <a href="#projects" class="btn"
-          >View my work <i class="fas fa-arrow-right"></i
-        ></a>
-      </section>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I’m an aspiring Full-Stack Developer based in Kuala Lumpur, MY<br />Currently,
-          I’m learning the ins and outs of web development from<br /><span
-            class="highlight"
-            >FreeCodeCamp</span
-          >, <span class="highlight">The Odin Projects</span> and
-          <span class="highlight">UDEMY Courses.</span><br />I have a genuine
-          passion for web development
-        </p>
-      </section>
-      <section id="stacks">
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
-            class="icon"
-          />HTML5
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png"
-            class="icon"
-          />CSS3
-        </div>
-        <div><i class="fab fa-js"></i>JavaScript</div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png"
-            class="icon"
-          />ReactJS
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png"
-            class="icon"
-          />NextJS
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/220px-Sass_Logo_Color.svg.png"
-            class="icon"
-          />SASS
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/250px-MongoDB-Logo.svg.png"
-            class="icon"
-          />MongoDB
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/220px-Postgresql_elephant.svg.png"
-            class="icon"
-          />PostgreSQL
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png"
-            class="icon"
-          />NodeJs
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/250px-Python_logo_and_wordmark.svg.png"
-            class="icon"
-          />Python
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/64px-Ruby_logo.svg.png"
-            class="icon"
-          />Ruby
-        </div>
-        <div>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png"
-            class="icon"
-          />Linux
-        </div>
-      </section>
-      <section id="projects">
-        <div class="wrapper">
-          <div class="project-tile">
-            <a href="">FreeCodeCamp Tribute Page</a>
+      <div class="container">
+        <section id="welcome-section" class="welcome-section">
+          <h1>Hello, I'm <span>Nik Lukman</span></h1>
+          <p>I'm an aspiring full-stack web developer</p>
+          <a href="#projects" class="btn"
+            >View my work <i class="fas fa-arrow-right"></i
+          ></a>
+        </section>
+        <section id="about" class="about">
+          <h2>About Me</h2>
+          <div class="section-line"></div>
+          <div class="about-container">
+            <img src="./images/profile-photo.png" class="profile-photo" />
+            <p>
+              I’m an aspiring Full-Stack Developer based in Kuala Lumpur, MY<br />Currently,
+              I’m learning the ins and outs of web development from<br /><span
+                class="highlight"
+                >FreeCodeCamp</span
+              >, <span class="highlight">The Odin Projects</span> and
+              <span class="highlight">UDEMY Courses.</span><br />I have a
+              genuine passion for web development
+            </p>
           </div>
-          <div class="project-tile">
-            <a href="">FreeCodeCamp Survey Form</a>
+        </section>
+        <section id="stacks" class="stacks">
+          <h2>Stacks</h2>
+          <div class="section-line"></div>
+          <div class="stacks-container">
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/220px-Sass_Logo_Color.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/250px-MongoDB-Logo.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/220px-Postgresql_elephant.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/250px-Python_logo_and_wordmark.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/64px-Ruby_logo.svg.png"
+                class="icon"
+              />
+            </div>
+            <div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png"
+                class="icon"
+              />
+            </div>
           </div>
-          <div class="project-tile">
-            <a href="">FreeCodeCamp Product Landing Page</a>
+        </section>
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
+          <div class="section-line"></div>
+          <div class="projects-container">
+            <div class="project-tile">
+              <h2>FreeCoceCamp: Tribute Page</h2>
+              <p
+                class="codepen"
+                data-height="350"
+                data-theme-id="dark"
+                data-default-tab="result"
+                data-user="niklukman"
+                data-slug-hash="dyMYaMv"
+                style="
+                  height: 350px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+                data-pen-title="FCC: Tribute Page - Yusuf Islam"
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/niklukman/pen/dyMYaMv">
+                    FCC: Tribute Page - Yusuf Islam</a
+                  >
+                  by Nik Lukman Nulhakim (<a href="https://codepen.io/niklukman"
+                    >@niklukman</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </div>
+            <div class="project-tile">
+              <h2>FCC: Product Landing Page</h2>
+              <p
+                class="codepen"
+                data-height="350"
+                data-theme-id="dark"
+                data-default-tab="result"
+                data-user="niklukman"
+                data-slug-hash="dyOQOJN"
+                style="
+                  height: 350px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+                data-pen-title="FCC: Product Landing Page. Modified wallabyjs.com website"
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/niklukman/pen/dyOQOJN">
+                    FCC: Product Landing Page. Modified wallabyjs.com website</a
+                  >
+                  by Nik Lukman Nulhakim (<a href="https://codepen.io/niklukman"
+                    >@niklukman</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </div>
+            <div class="project-tile">
+              <h2>FCC: Survey Form</h2>
+              <p
+                class="codepen"
+                data-height="350"
+                data-theme-id="dark"
+                data-default-tab="result"
+                data-user="niklukman"
+                data-slug-hash="ZEBBaOd"
+                style="
+                  height: 350px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+                data-pen-title="FCC: Survey Form"
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/niklukman/pen/ZEBBaOd">
+                    FCC: Survey Form</a
+                  >
+                  by Nik Lukman Nulhakim (<a href="https://codepen.io/niklukman"
+                    >@niklukman</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </div>
+            <div class="project-tile">
+              <h2>FCC: Technical Documentation Page</h2>
+              <p
+                class="codepen"
+                data-height="350"
+                data-theme-id="dark"
+                data-default-tab="result"
+                data-user="niklukman"
+                data-slug-hash="qBqLrqM"
+                style="
+                  height: 350px;
+                  box-sizing: border-box;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border: 2px solid;
+                  margin: 1em 0;
+                  padding: 1em;
+                "
+                data-pen-title="FCC: Technical Documentation Page. CSS Flexbox"
+              >
+                <span
+                  >See the Pen
+                  <a href="https://codepen.io/niklukman/pen/qBqLrqM">
+                    FCC: Technical Documentation Page. CSS Flexbox</a
+                  >
+                  by Nik Lukman Nulhakim (<a href="https://codepen.io/niklukman"
+                    >@niklukman</a
+                  >) on <a href="https://codepen.io">CodePen</a>.</span
+                >
+              </p>
+            </div>
           </div>
-          <div class="project-tile">
-            <a href="">FreeCodeCamp Technical Documentation Page</a>
+        </section>
+        <section id="contact" class="contact">
+          <h2>Contacts</h2>
+          <div class="section-line"></div>
+          <p>Have a question or want to work together?</p>
+          <div>
+            <a href="mailto:mail@example.com"
+              ><i class="far fa-envelope"></i
+            ></a>
           </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div>
-          <a
-            href="https://github.com/niklukman/"
-            target="_blank"
-            id="profile-link"
-            >Github</a
-          >
-        </div>
-        <div>
-          <a href="https://www.freecodecamp.org/nl91" target="_blank"
-            >FreeCodeCamp Profile</a
-          >
-        </div>
-      </section>
+          <div>
+            <a
+              href="https://github.com/niklukman/"
+              target="_blank"
+              id="profile-link"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.freecodecamp.org/nl91" target="_blank"
+              ><i class="fab fa-free-code-camp"></i
+            ></a>
+          </div>
+          <div class="foot">
+            <a href="#navbar"><i class="fas fa-angle-double-up"></i></a>
+          </div>
+          <p>Created for: FreeCodeCamp</p>
+        </section>
+      </div>
     </main>
 
+    <script
+      async
+      src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+    ></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script
       src="https://kit.fontawesome.com/83f2fdee09.js"
